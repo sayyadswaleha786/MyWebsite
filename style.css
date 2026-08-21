@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #0a2540;
+    color: #fff;
+  }
+  
+  .navbar a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  /* Hero */
+  .hero {
+    /*background: linear-gradient(to right, #0a2540, #134e8a);*/
+    background: url('images/people.png') no-repeat center center/cover;
+    background-size:100% 100%; 
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+  }
+  .hero h2 {
+    opacity: 100;
+    animation: fadeUp 1s ease-out forwards;
+  }
+  /*.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); 
+    z-index: 1;
+  }*/
+    .hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #00d4ff;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Services */
+  .services {
+    padding: 60px 10%;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+
+  .service-cards .card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 in first row */
+    box-sizing: border-box;
+    min-width: 250px;
+}
+  
+  /* About */
+  .about {
+    padding: 60px 10%;
+    background: #fafafa;
+    text-align: center;
+  }
+  
+  /* CTA */
+  .cta {
+    padding: 60px 10%;
+    background: #0a2540;
+    color: white;
+    text-align: center;
+  }
+  
+  .cta button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background: #00d4ff;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #111;
+    color: #ccc;
+  }
+  .whatsapp-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.whatsapp-chat img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-chat:hover {
+    transform: scale(1.1);
+}
+.call-button {
+    position: fixed;
+    bottom: 100px; /* adjust so it doesn't overlap WhatsApp button */
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.call-button img {
+    width: 35px;
+    height: 35px;
+}
+
+.call-button:hover {
+    transform: scale(1.1);
+}
+.arrow-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #f9f9f9;
+    color: #ccc; /* light gray arrow */
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: color 0.3s, background 0.3s, transform 0.3s;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .arrow-button:hover {
+    background: #eaeaea;
+    color: #999;
+    transform: translateX(5px);
+  }
+  .card-image {
+    width: 15%;
+    height: auto;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 15px;
+  }
+  .linkedin-float {
+    position: fixed;
+    bottom: 180px; /* adjust to stack with call/WhatsApp */
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+  }
+  
+  .linkedin-float img {
+    width: 28px;
+  }
+  
+  .linkedin-float:hover {
+    transform: scale(1.1);
+  }
