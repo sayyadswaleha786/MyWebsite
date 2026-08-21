@@ -33,7 +33,7 @@
   /* Hero */
   .hero {
     /*background: linear-gradient(to right, #0a2540, #134e8a);*/
-    background: url('images/people.png') no-repeat center center/cover;
+    background: url('people.png') no-repeat center center/cover;
     background-size:100% 100%; 
     color: white;
     padding: 80px 10%;
