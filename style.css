@@ -1,214 +1,815 @@
+```css
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background: #0a2540;
-    color: #fff;
-  }
-  
-  .navbar a {
-    color: #fff;
-    margin-left: 20px;
-    text-decoration: none;
-  }
-  
-  .logo {
-    font-size: 24px;
-  }
-  
-  /* Hero */
-  .hero {
-    /*background: linear-gradient(to right, #0a2540, #134e8a);*/
-    background: url('people.png') no-repeat center center/cover;
-    background-size:100% 100%; 
-    color: white;
-    padding: 80px 10%;
-    text-align: center;
-  }
-  .hero h2 {
-    opacity: 100;
-    animation: fadeUp 1s ease-out forwards;
-  }
-  /*.hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.5); 
-    z-index: 1;
-  }*/
-    .hero button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: none;
-    background: #00d4ff;
-    color: #000;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  /* Services */
-  .services {
-    padding: 60px 10%;
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  .service-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-
-  .service-cards .card {
-    background: #f4f4f4;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1 1 calc(33.333% - 20px); /* 3 in first row */
-    box-sizing: border-box;
-    min-width: 250px;
-}
-  
-  /* About */
-  .about {
-    padding: 60px 10%;
-    background: #fafafa;
-    text-align: center;
-  }
-  
-  /* CTA */
-  .cta {
-    padding: 60px 10%;
-    background: #0a2540;
-    color: white;
-    text-align: center;
-  }
-  
-  .cta button {
-    margin-top: 15px;
-    padding: 12px 25px;
-    border: none;
-    background: #00d4ff;
-    cursor: pointer;
-  }
-  
-  /* Footer */
-  footer {
-    padding: 20px;
-    text-align: center;
-    background: #111;
-    color: #ccc;
-  }
-  .whatsapp-chat {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #25D366;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.whatsapp-chat img {
-    width: 35px;
-    height: 35px;
+html {
+  scroll-behavior: smooth;
 }
 
-.whatsapp-chat:hover {
-    transform: scale(1.1);
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #f4f7fb;
+  line-height: 1.6;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+
+  background: #071b3a;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.navbar nav {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.navbar nav a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #00a8ff;
+}
+
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+  min-height: calc(100vh - 75px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(5, 25, 55, 0.90),
+      rgba(5, 25, 55, 0.90)
+    ),
+    url("hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background: #00a8ff;
+
+  border-radius: 50%;
+
+  filter: blur(130px);
+
+  opacity: 0.15;
+
+  top: 10%;
+  left: 10%;
+}
+
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  background: #0066ff;
+
+  border-radius: 50%;
+
+  filter: blur(130px);
+
+  opacity: 0.15;
+
+  bottom: 10%;
+  right: 10%;
+}
+
+.hero h2 {
+  position: relative;
+
+  z-index: 1;
+
+  color: #ffffff;
+
+  font-size: 58px;
+
+  line-height: 1.2;
+
+  max-width: 900px;
+
+  margin: 0 auto 25px;
+}
+
+.hero p {
+  position: relative;
+
+  z-index: 1;
+
+  color: #dceaf5;
+
+  font-size: 20px;
+
+  max-width: 750px;
+
+  margin: 0 auto 35px;
+}
+
+.hero button {
+  position: relative;
+
+  z-index: 1;
+
+  border: none;
+
+  background: #00a8ff;
+
+  color: #ffffff;
+
+  padding: 15px 35px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  background: #0086cc;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px rgba(0, 168, 255, 0.3);
+}
+
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.services {
+  padding: 100px 7%;
+
+  background: #f4f7fb;
+
+  min-height: 100vh;
+}
+
+.services > h3 {
+  text-align: center;
+
+  color: #071b3a;
+
+  font-size: 42px;
+
+  margin-bottom: 55px;
+
+  position: relative;
+}
+
+.services > h3::after {
+  content: "";
+
+  display: block;
+
+  width: 60px;
+  height: 4px;
+
+  background: #00a8ff;
+
+  margin: 15px auto 0;
+
+  border-radius: 5px;
+}
+
+
+/* =========================================
+   SERVICE CARDS
+========================================= */
+
+.service-cards {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+.card {
+  position: relative;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  min-height: 450px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.06);
+
+  border: 1px solid #edf1f5;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   CARD IMAGE
+========================================= */
+
+.card-image {
+  width: 100%;
+
+  height: 170px;
+
+  object-fit: contain;
+
+  background: #f6f9fc;
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  margin-bottom: 22px;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.card h4 {
+  color: #071b3a;
+
+  font-size: 21px;
+
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #687585;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  padding-bottom: 60px;
+}
+
+
+/* =========================================
+   CARD ARROW
+========================================= */
+
+.arrow-button {
+  position: absolute;
+
+  bottom: 25px;
+  right: 25px;
+
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #071b3a;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 50%;
+
+  font-size: 23px;
+
+  transition: 0.3s ease;
+}
+
+.arrow-button:hover {
+  background: #00a8ff;
+
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about {
+  min-height: 60vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 90px 20px;
+
+  background: #ffffff;
+}
+
+.about h3 {
+  color: #071b3a;
+
+  font-size: 42px;
+
+  margin-bottom: 25px;
+}
+
+.about h3::after {
+  content: "";
+
+  display: block;
+
+  width: 60px;
+  height: 4px;
+
+  background: #00a8ff;
+
+  margin: 15px auto 0;
+
+  border-radius: 5px;
+}
+
+.about p {
+  max-width: 850px;
+
+  color: #687585;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   CTA SECTION
+========================================= */
+
+.cta {
+  min-height: 45vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 70px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071b3a,
+      #075985
+    );
+
+  color: #ffffff;
+}
+
+.cta h3 {
+  font-size: 42px;
+
+  margin-bottom: 30px;
+}
+
+.cta button {
+  border: none;
+
+  background: #00a8ff;
+
+  color: #ffffff;
+
+  padding: 15px 35px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.cta button:hover {
+  background: #ffffff;
+
+  color: #071b3a;
+
+  transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+  min-height: 100px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 30px 180px 30px 30px;
+
+  position: relative;
+
+  background: #031024;
+
+  color: #ffffff;
+}
+
+footer p {
+  font-size: 14px;
+
+  color: #cbd5e1;
+}
+
+
+/* =========================================
+   FLOATING CALL BUTTON
+========================================= */
+
 .call-button {
-    position: fixed;
-    bottom: 100px; /* adjust so it doesn't overlap WhatsApp button */
-    right: 20px;
-    z-index: 1000;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #007bff;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
-}
+  position: fixed;
 
-.call-button img {
-    width: 35px;
-    height: 35px;
+  right: 25px;
+  bottom: 190px;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #2196f3;
+
+  border-radius: 50%;
+
+  z-index: 999;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s ease;
 }
 
 .call-button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
+
+  background: #1976d2;
 }
-.arrow-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #f9f9f9;
-    color: #ccc; /* light gray arrow */
-    font-size: 24px;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: color 0.3s, background 0.3s, transform 0.3s;
-    border: 1px solid #f0f0f0;
+
+.call-button img {
+  width: 27px;
+  height: 27px;
+}
+
+
+/* =========================================
+   WHATSAPP BUTTON
+========================================= */
+
+.whatsapp-chat {
+  position: fixed;
+
+  right: 25px;
+  bottom: 125px;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #25d366;
+
+  border-radius: 50%;
+
+  z-index: 999;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s ease;
+}
+
+.whatsapp-chat:hover {
+  transform: scale(1.1);
+
+  background: #1ebe5d;
+}
+
+.whatsapp-chat img {
+  width: 30px;
+  height: 30px;
+}
+
+
+/* =========================================
+   LINKEDIN BUTTON
+========================================= */
+
+.linkedin-float {
+  position: fixed;
+
+  right: 25px;
+  bottom: 60px;
+
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #0077b5;
+
+  border-radius: 50%;
+
+  z-index: 999;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.25);
+
+  transition: 0.3s ease;
+}
+
+.linkedin-float:hover {
+  transform: scale(1.1);
+
+  background: #005f91;
+}
+
+.linkedin-float img {
+  width: 28px;
+  height: 28px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .navbar {
+    padding: 0 4%;
   }
-  
-  .arrow-button:hover {
-    background: #eaeaea;
-    color: #999;
-    transform: translateX(5px);
+
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .card-image {
-    width: 15%;
+
+  .hero h2 {
+    font-size: 48px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .navbar {
     height: auto;
-    border-radius: 6px 6px 0 0;
-    margin-bottom: 15px;
+
+    padding: 18px 20px;
+
+    flex-direction: column;
+
+    gap: 15px;
   }
-  .linkedin-float {
-    position: fixed;
-    bottom: 180px; /* adjust to stack with call/WhatsApp */
-    right: 20px;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .navbar nav {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-    transition: transform 0.3s;
   }
-  
-  .linkedin-float img {
-    width: 28px;
+
+  .navbar nav a {
+    font-size: 14px;
   }
-  
-  .linkedin-float:hover {
-    transform: scale(1.1);
+
+
+  /* Hero */
+
+  .hero {
+    min-height: calc(100vh - 120px);
+
+    padding: 70px 20px;
   }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+
+  /* Services */
+
+  .services {
+    padding: 70px 20px;
+  }
+
+  .services > h3 {
+    font-size: 32px;
+
+    margin-bottom: 40px;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .card {
+    min-height: 430px;
+  }
+
+
+  /* About */
+
+  .about {
+    padding: 70px 20px;
+  }
+
+  .about h3 {
+    font-size: 32px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+
+  /* CTA */
+
+  .cta {
+    min-height: 40vh;
+
+    padding: 60px 20px;
+  }
+
+  .cta h3 {
+    font-size: 30px;
+  }
+
+
+  /* Footer */
+
+  footer {
+    padding: 30px 20px 130px;
+  }
+
+
+  /* Floating buttons */
+
+  .call-button,
+  .whatsapp-chat,
+  .linkedin-float {
+    right: 18px;
+
+    width: 48px;
+    height: 48px;
+  }
+
+  .call-button {
+    bottom: 175px;
+  }
+
+  .whatsapp-chat {
+    bottom: 115px;
+  }
+
+  .linkedin-float {
+    bottom: 55px;
+  }
+
+}
+

@@ -1,0 +1,734 @@
+/* =========================================
+   CLOUD MIGRATION HERO
+========================================= */
+
+.cloud-hero {
+  min-height: 70vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      rgba(5, 25, 55, 0.90),
+      rgba(5, 25, 55, 0.90)
+    ),
+    url("cloud-migration-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+
+.cloud-hero-content {
+  max-width: 850px;
+}
+
+
+.cloud-hero .small-title {
+  display: inline-block;
+
+  color: #00b7ff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+
+.cloud-hero h2 {
+  font-size: 58px;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+
+.cloud-hero p {
+  max-width: 800px;
+
+  margin: 0 auto 35px;
+
+  color: #dceaf5;
+
+  font-size: 20px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.cloud-intro {
+  min-height: 70vh;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 90px 8%;
+
+  background: #ffffff;
+}
+
+
+.cloud-intro-image {
+  min-height: 350px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  background: #f5f8fc;
+
+  border-radius: 20px;
+}
+
+
+.cloud-intro-image img {
+  width: 80%;
+
+  max-width: 400px;
+
+  max-height: 280px;
+
+  object-fit: contain;
+}
+
+
+.cloud-intro-content {
+  max-width: 650px;
+}
+
+
+.section-label {
+  display: block;
+
+  color: #009fe3;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+
+.cloud-intro-content h2,
+.section-heading h2 {
+  color: #071b3a;
+
+  font-size: 40px;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+
+.cloud-intro-content p {
+  color: #606b78;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================================
+   CLOUD SERVICES
+========================================= */
+
+.cloud-services {
+  padding: 100px 7%;
+
+  background: #f4f7fb;
+}
+
+
+.section-heading {
+  max-width: 800px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+.section-heading p {
+  color: #687585;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+.cloud-service-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+.cloud-service-card {
+  min-height: 300px;
+
+  padding: 35px 28px;
+
+  background: #ffffff;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s ease;
+}
+
+
+.cloud-service-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.service-number {
+  color: #00a8ff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  margin-bottom: 25px;
+}
+
+
+.cloud-service-card h3 {
+  color: #071b3a;
+
+  font-size: 20px;
+
+  line-height: 1.4;
+
+  margin-bottom: 15px;
+}
+
+
+.cloud-service-card p {
+  color: #687585;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CLOUD BENEFITS
+========================================= */
+
+.cloud-benefits {
+  padding: 100px 7%;
+
+  background: #ffffff;
+}
+
+
+.benefit-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+.benefit-card {
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background: #f5f8fc;
+
+  border-radius: 15px;
+
+  transition: 0.3s ease;
+}
+
+
+.benefit-card:hover {
+  transform: translateY(-7px);
+
+  background: #eef8ff;
+}
+
+
+.benefit-icon {
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  background: #071b3a;
+
+  color: #00b7ff;
+
+  font-size: 13px;
+
+  font-weight: bold;
+}
+
+
+.benefit-card h3 {
+  color: #071b3a;
+
+  font-size: 20px;
+
+  margin-bottom: 12px;
+}
+
+
+.benefit-card p {
+  color: #687585;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CLOUD PLATFORMS
+========================================= */
+
+.cloud-platforms {
+  padding: 100px 7%;
+
+  background: #f4f7fb;
+}
+
+
+.platform-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+.platform-card {
+  padding: 35px 25px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+
+  transition: 0.3s ease;
+}
+
+
+.platform-card:hover {
+  transform: translateY(-7px);
+}
+
+
+.platform-logo {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 20px;
+
+  border-radius: 15px;
+
+  background: #071b3a;
+
+  color: #00b7ff;
+
+  font-size: 17px;
+
+  font-weight: bold;
+}
+
+
+.platform-card h3 {
+  color: #071b3a;
+
+  font-size: 19px;
+
+  margin-bottom: 12px;
+}
+
+
+.platform-card p {
+  color: #687585;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   MIGRATION PROCESS
+========================================= */
+
+.cloud-process {
+  padding: 100px 7%;
+
+  background: #ffffff;
+}
+
+
+.process-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+
+.process-card {
+  padding: 30px;
+
+  background: #f5f8fc;
+
+  border-radius: 12px;
+
+  border-top: 4px solid #00a8ff;
+}
+
+
+.process-card span {
+  color: #00a8ff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+
+.process-card h3 {
+  color: #071b3a;
+
+  font-size: 20px;
+
+  margin: 12px 0;
+}
+
+
+.process-card p {
+  color: #687585;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   WHY CHOOSE US
+========================================= */
+
+.why-cloud {
+  padding: 100px 7%;
+
+  background: #f4f7fb;
+}
+
+
+.why-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+
+.why-card {
+  padding: 35px;
+
+  background: #ffffff;
+
+  border-left: 4px solid #00a8ff;
+
+  border-radius: 8px;
+}
+
+
+.why-card h3 {
+  color: #071b3a;
+
+  font-size: 21px;
+
+  margin-bottom: 12px;
+}
+
+
+.why-card p {
+  color: #687585;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.cloud-cta {
+  min-height: 45vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 70px 20px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071b3a,
+      #075985
+    );
+}
+
+
+.cloud-cta div {
+  max-width: 750px;
+}
+
+
+.cloud-cta h2 {
+  font-size: 42px;
+
+  margin-bottom: 20px;
+}
+
+
+.cloud-cta p {
+  color: #dceaf5;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hero-button,
+.cta-button {
+  display: inline-block;
+
+  padding: 14px 30px;
+
+  background: #00a8ff;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  border-radius: 6px;
+
+  transition: 0.3s ease;
+}
+
+
+.hero-button:hover,
+.cta-button:hover {
+  background: #0088d1;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .cloud-intro {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  .cloud-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .platform-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .cloud-hero {
+    min-height: 60vh;
+
+    padding: 70px 20px;
+  }
+
+
+  .cloud-hero h2 {
+    font-size: 40px;
+  }
+
+
+  .cloud-hero p {
+    font-size: 16px;
+  }
+
+
+  .cloud-intro {
+    padding: 60px 20px;
+  }
+
+
+  .cloud-intro-content h2,
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+
+  .cloud-services,
+  .cloud-benefits,
+  .cloud-platforms,
+  .cloud-process,
+  .why-cloud {
+    padding: 70px 20px;
+  }
+
+
+  .cloud-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .cloud-cta h2 {
+    font-size: 32px;
+  }
+
+}

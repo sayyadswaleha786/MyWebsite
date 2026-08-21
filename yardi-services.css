@@ -1,0 +1,416 @@
+ /* ================================
+   YARDI HERO
+================================ */
+
+.yardi-hero {
+  min-height: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  background:
+    linear-gradient(
+      rgba(5, 25, 55, 0.92),
+      rgba(5, 25, 55, 0.92)
+    ),
+    url("yardi-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+}
+
+
+.yardi-hero-content {
+  max-width: 850px;
+}
+
+
+.small-title {
+  display: inline-block;
+
+  color: #00b7ff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+
+.yardi-hero h2 {
+  font-size: 58px;
+
+  margin-bottom: 25px;
+}
+
+
+.yardi-hero p {
+  font-size: 20px;
+
+  line-height: 1.7;
+
+  color: #dceaf5;
+
+  margin-bottom: 35px;
+}
+
+
+/* ================================
+   INTRODUCTION
+================================ */
+
+.yardi-intro {
+  min-height: 70vh;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 90px 8%;
+
+  background: white;
+}
+
+
+.yardi-intro-image {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 350px;
+
+  background: #f5f8fc;
+
+  border-radius: 20px;
+
+  padding: 40px;
+}
+
+
+.yardi-intro-image img {
+  width: 80%;
+
+  max-width: 400px;
+
+  max-height: 250px;
+
+  object-fit: contain;
+}
+
+
+.yardi-intro-content {
+  max-width: 650px;
+}
+
+
+.section-label {
+  color: #009fe3;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  letter-spacing: 2px;
+
+  display: block;
+
+  margin-bottom: 12px;
+}
+
+
+.yardi-intro-content h2,
+.section-heading h2 {
+  color: #071b3a;
+
+  font-size: 40px;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+
+.yardi-intro-content p {
+  color: #606b78;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+}
+
+
+/* ================================
+   SERVICES
+================================ */
+
+.yardi-services {
+  padding: 100px 7%;
+
+  background: #f4f7fb;
+}
+
+
+.section-heading {
+  max-width: 800px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+
+.section-heading p {
+  color: #687585;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+
+.yardi-service-grid {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+
+.yardi-service-card {
+  position: relative;
+
+  background: white;
+
+  padding: 35px 28px;
+
+  min-height: 280px;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+
+.yardi-service-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.service-number {
+  color: #00a8ff;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  margin-bottom: 25px;
+}
+
+
+.yardi-service-card h3 {
+  color: #071b3a;
+
+  font-size: 20px;
+
+  margin-bottom: 15px;
+}
+
+
+.yardi-service-card p {
+  color: #687585;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+
+/* ================================
+   WHY CHOOSE US
+================================ */
+
+.why-yardi {
+  padding: 100px 7%;
+
+  background: white;
+}
+
+
+.why-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+
+.why-card {
+  padding: 35px;
+
+  border-left: 4px solid #00a8ff;
+
+  background: #f5f8fc;
+
+  border-radius: 8px;
+}
+
+
+.why-card h3 {
+  color: #071b3a;
+
+  font-size: 21px;
+
+  margin-bottom: 12px;
+}
+
+
+.why-card p {
+  color: #687585;
+
+  line-height: 1.7;
+}
+
+
+/* ================================
+   CTA
+================================ */
+
+.yardi-cta {
+  min-height: 45vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 70px 20px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071b3a,
+      #075985
+    );
+
+  color: white;
+}
+
+
+.yardi-cta div {
+  max-width: 750px;
+}
+
+
+.yardi-cta h2 {
+  font-size: 42px;
+
+  margin-bottom: 20px;
+}
+
+
+.yardi-cta p {
+  color: #dceaf5;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 1000px) {
+
+  .yardi-service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .yardi-intro {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .yardi-hero {
+    min-height: 60vh;
+  }
+
+  .yardi-hero h2 {
+    font-size: 40px;
+  }
+
+  .yardi-hero p {
+    font-size: 16px;
+  }
+
+  .yardi-intro {
+    padding: 60px 20px;
+  }
+
+  .yardi-intro-content h2,
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .yardi-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yardi-services,
+  .why-yardi {
+    padding: 70px 20px;
+  }
+
+  .yardi-cta h2 {
+    font-size: 32px;
+  }
+
+}
