@@ -86,7 +86,7 @@ img {
 ========================================= */
 
 .hero {
-  min-height: calc(100vh - 75px);
+  min-height: calc(80vh - 60px);
 
   display: flex;
   flex-direction: column;
