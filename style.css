@@ -86,7 +86,7 @@ img {
 ========================================= */
 
 .hero {
-  min-height: calc(80vh - 60px);
+  min-height: 100px;
 
   display: flex;
   flex-direction: column;
@@ -95,7 +95,7 @@ img {
 
   text-align: center;
 
-  padding: 80px 20px;
+  padding: 40px 10px;
 
   position: relative;
 
@@ -218,11 +218,11 @@ img {
 ========================================= */
 
 .services {
-  padding: 100px 7%;
+  padding: 50px 3%;
 
   background: #f4f7fb;
 
-  min-height: 100vh;
+  min-height: 40vh;
 }
 
 .services > h3 {
@@ -389,7 +389,7 @@ img {
 ========================================= */
 
 .about {
-  min-height: 60vh;
+  min-height: 30vh;
 
   display: flex;
 
@@ -400,7 +400,7 @@ img {
 
   text-align: center;
 
-  padding: 90px 20px;
+  padding: 30px 10px;
 
   background: #ffffff;
 }
@@ -444,7 +444,7 @@ img {
 ========================================= */
 
 .cta {
-  min-height: 45vh;
+  min-height: 20vh;
 
   display: flex;
 
@@ -455,7 +455,7 @@ img {
 
   text-align: center;
 
-  padding: 70px 20px;
+  padding: 15px 10px;
 
   background:
     linear-gradient(
@@ -507,7 +507,7 @@ img {
 ========================================= */
 
 footer {
-  min-height: 100px;
+  min-height: 40px;
 
   display: flex;
 
@@ -516,7 +516,7 @@ footer {
 
   text-align: center;
 
-  padding: 30px 180px 30px 30px;
+  padding: 20px 180px 20px 20px;
 
   position: relative;
 
