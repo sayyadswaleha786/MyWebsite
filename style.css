@@ -683,7 +683,7 @@ footer p {
    MOBILE
 ========================================= */
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 
   .navbar {
     height: auto;
@@ -715,9 +715,8 @@ footer p {
   /* Hero */
 
   .hero {
-    min-height: calc(100vh - 120px);
-
-    padding: 70px 20px;
+    min-height: 380px;
+    padding: 60px 20px;
   }
 
   .hero h2 {
@@ -755,7 +754,7 @@ footer p {
   /* About */
 
   .about {
-    padding: 70px 20px;
+    padding: 50px 20px;
   }
 
   .about h3 {
