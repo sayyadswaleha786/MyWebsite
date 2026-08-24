@@ -27,10 +27,12 @@ img {
 
 /* =========================================
    NAVBAR
+   LOGO + NAME = LEFT
+   MENU = RIGHT
 ========================================= */
 
 .navbar {
-  height: 75px;
+  min-height: 75px;
 
   display: flex;
   align-items: center;
@@ -48,6 +50,54 @@ img {
   box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
 }
 
+
+/* =========================================
+   COMPANY BRAND
+========================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
+}
+
+
+/* Circular Company Logo */
+
+.company-logo {
+  width: 52px;
+  height: 52px;
+
+  object-fit: contain;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  padding: 4px;
+
+  border: 2px solid #00a8ff;
+
+  box-shadow:
+    0 4px 12px rgba(0, 168, 255, 0.25);
+
+  transition: 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.08);
+
+  box-shadow:
+    0 6px 18px rgba(0, 168, 255, 0.4);
+}
+
+
+/* Company Name */
+
 .logo {
   color: #ffffff;
 
@@ -57,10 +107,17 @@ img {
   white-space: nowrap;
 }
 
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
 .navbar nav {
   display: flex;
 
   align-items: center;
+
+  justify-content: flex-end;
 
   gap: 30px;
 }
@@ -71,6 +128,7 @@ img {
   text-decoration: none;
 
   font-size: 15px;
+
   font-weight: 600;
 
   transition: 0.3s ease;
@@ -90,6 +148,7 @@ img {
 
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
 
@@ -98,6 +157,8 @@ img {
   padding: 40px 10px;
 
   position: relative;
+
+  overflow: hidden;
 
   background:
     linear-gradient(
@@ -109,6 +170,9 @@ img {
   background-size: cover;
   background-position: center;
 }
+
+
+/* Blue Glow */
 
 .hero::before {
   content: "";
@@ -150,6 +214,9 @@ img {
   right: 10%;
 }
 
+
+/* Hero Heading */
+
 .hero h2 {
   position: relative;
 
@@ -166,6 +233,9 @@ img {
   margin: 0 auto 25px;
 }
 
+
+/* Hero Paragraph */
+
 .hero p {
   position: relative;
 
@@ -179,6 +249,9 @@ img {
 
   margin: 0 auto 35px;
 }
+
+
+/* Hero Button */
 
 .hero button {
   position: relative;
@@ -209,7 +282,8 @@ img {
 
   transform: translateY(-3px);
 
-  box-shadow: 0 10px 25px rgba(0, 168, 255, 0.3);
+  box-shadow:
+    0 10px 25px rgba(0, 168, 255, 0.3);
 }
 
 
@@ -303,7 +377,7 @@ img {
 
 
 /* =========================================
-   CARD IMAGE
+   SERVICE CARD IMAGE
 ========================================= */
 
 .card-image {
@@ -324,7 +398,7 @@ img {
 
 
 /* =========================================
-   CARD CONTENT
+   SERVICE CARD CONTENT
 ========================================= */
 
 .card h4 {
@@ -383,8 +457,9 @@ img {
   transform: translateX(5px);
 }
 
+
 /* =========================================
-   OUR PROJECTS SECTION
+   OUR PROJECTS
 ========================================= */
 
 .projects {
@@ -438,11 +513,6 @@ img {
 
   gap: 28px;
 }
-
-
-/* =========================================
-   PROJECT CARD
-========================================= */
 
 .project-card {
   position: relative;
@@ -598,67 +668,6 @@ img {
 
 
 /* =========================================
-   PROJECT TABLET
-========================================= */
-
-@media (max-width: 1000px) {
-
-  .project-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-
-/* =========================================
-   PROJECT MOBILE
-========================================= */
-
-@media (max-width: 600px) {
-
-  .projects {
-    padding: 70px 20px;
-  }
-
-  .projects > h3 {
-    font-size: 32px;
-
-    margin-bottom: 40px;
-  }
-
-  .project-cards {
-    grid-template-columns: 1fr;
-
-    gap: 22px;
-  }
-
-  .project-card {
-    min-height: 340px;
-
-    padding: 22px;
-  }
-
-  .project-logo-wrapper {
-    height: 180px;
-
-    padding: 15px;
-  }
-
-  .project-logo {
-    max-width: 230px;
-
-    max-height: 145px;
-  }
-
-  .project-card h4 {
-    font-size: 19px;
-  }
-
-}
-
-
-
-/* =========================================
    ABOUT SECTION
 ========================================= */
 
@@ -670,6 +679,7 @@ img {
   flex-direction: column;
 
   align-items: center;
+
   justify-content: center;
 
   text-align: center;
@@ -725,6 +735,7 @@ img {
   flex-direction: column;
 
   align-items: center;
+
   justify-content: center;
 
   text-align: center;
@@ -786,11 +797,12 @@ footer {
   display: flex;
 
   align-items: center;
+
   justify-content: center;
 
   text-align: center;
 
-  padding: 20px 180px 20px 20px;
+  padding: 20px;
 
   position: relative;
 
@@ -946,6 +958,10 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .hero h2 {
     font-size: 48px;
   }
@@ -959,22 +975,39 @@ footer p {
 
 @media (max-width: 600px) {
 
-  .navbar {
-    height: auto;
+  /* Navbar */
 
-    padding: 18px 20px;
+  .navbar {
+    min-height: auto;
+
+    padding: 15px 20px;
 
     flex-direction: column;
 
     gap: 15px;
   }
 
+  .brand {
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+  .company-logo {
+    width: 44px;
+    height: 44px;
+  }
+
   .logo {
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .navbar nav {
-    gap: 15px;
+    width: 100%;
+
+    gap: 12px 18px;
 
     flex-wrap: wrap;
 
@@ -990,6 +1023,7 @@ footer p {
 
   .hero {
     min-height: 380px;
+
     padding: 60px 20px;
   }
 
@@ -1022,6 +1056,47 @@ footer p {
 
   .card {
     min-height: 430px;
+  }
+
+
+  /* Projects */
+
+  .projects {
+    padding: 70px 20px;
+  }
+
+  .projects > h3 {
+    font-size: 32px;
+
+    margin-bottom: 40px;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .project-card {
+    min-height: 340px;
+
+    padding: 22px;
+  }
+
+  .project-logo-wrapper {
+    height: 180px;
+
+    padding: 15px;
+  }
+
+  .project-logo {
+    max-width: 230px;
+
+    max-height: 145px;
+  }
+
+  .project-card h4 {
+    font-size: 19px;
   }
 
 
@@ -1060,7 +1135,7 @@ footer p {
   }
 
 
-  /* Floating buttons */
+  /* Floating Buttons */
 
   .call-button,
   .whatsapp-chat,
@@ -1084,4 +1159,3 @@ footer p {
   }
 
 }
-
