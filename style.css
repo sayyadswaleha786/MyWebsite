@@ -383,6 +383,280 @@ img {
   transform: translateX(5px);
 }
 
+/* =========================================
+   OUR PROJECTS SECTION
+========================================= */
+
+.projects {
+  padding: 50px 3%;
+
+  background: #ffffff;
+
+  min-height: 35vh;
+}
+
+.projects > h3 {
+  text-align: center;
+
+  color: #071b3a;
+
+  font-size: 42px;
+
+  margin-bottom: 55px;
+
+  position: relative;
+}
+
+.projects > h3::after {
+  content: "";
+
+  display: block;
+
+  width: 60px;
+  height: 4px;
+
+  background: #00a8ff;
+
+  margin: 15px auto 0;
+
+  border-radius: 5px;
+}
+
+
+/* =========================================
+   PROJECT CARDS
+========================================= */
+
+.project-cards {
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+  position: relative;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  padding: 25px;
+
+  min-height: 360px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.06);
+
+  border: 1px solid #edf1f5;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.12);
+
+  border-color: #dbeafe;
+}
+
+
+/* =========================================
+   PROJECT LINK
+========================================= */
+
+.project-link {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+
+/* =========================================
+   PROJECT LOGO
+========================================= */
+
+.project-logo-wrapper {
+  width: 100%;
+
+  height: 200px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #f6f9fc;
+
+  border-radius: 12px;
+
+  padding: 20px;
+
+  margin-bottom: 22px;
+
+  transition: 0.3s ease;
+}
+
+.project-card:hover .project-logo-wrapper {
+  background: #eef8ff;
+}
+
+.project-logo {
+  max-width: 260px;
+
+  max-height: 160px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.project-card:hover .project-logo {
+  transform: scale(1.06);
+}
+
+
+/* =========================================
+   PROJECT TITLE
+========================================= */
+
+.project-card h4 {
+  color: #071b3a;
+
+  font-size: 21px;
+
+  margin-bottom: 12px;
+
+  transition: 0.3s ease;
+}
+
+.project-card:hover h4 {
+  color: #00a8ff;
+}
+
+
+/* =========================================
+   PROJECT WEBSITE LINK
+========================================= */
+
+.project-view {
+  display: inline-block;
+
+  color: #00a8ff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.project-card:hover .project-view {
+  color: #071b3a;
+
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   PROJECT TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .project-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================================
+   PROJECT MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .projects {
+    padding: 70px 20px;
+  }
+
+  .projects > h3 {
+    font-size: 32px;
+
+    margin-bottom: 40px;
+  }
+
+  .project-cards {
+    grid-template-columns: 1fr;
+
+    gap: 22px;
+  }
+
+  .project-card {
+    min-height: 340px;
+
+    padding: 22px;
+  }
+
+  .project-logo-wrapper {
+    height: 180px;
+
+    padding: 15px;
+  }
+
+  .project-logo {
+    max-width: 230px;
+
+    max-height: 145px;
+  }
+
+  .project-card h4 {
+    font-size: 19px;
+  }
+
+}
+
+
 
 /* =========================================
    ABOUT SECTION

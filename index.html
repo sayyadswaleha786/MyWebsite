@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +33,7 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
       <a href="#about">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -231,6 +233,49 @@
   </section>
 
 
+  <!-- Our Projects -->
+  <section id="projects" class="projects">
+
+    <h3>Our Projects</h3>
+
+    <div class="project-cards">
+
+      <!-- Shri Sai Samarth Cement Product -->
+      <div class="project-card">
+
+        <a
+          href="https://ssscementproduct.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Shri Sai Samarth Cement Product website"
+          class="project-link"
+        >
+
+          <div class="project-logo-wrapper">
+
+            <img
+              src="sss-cement-logo.png"
+              alt="Shri Sai Samarth Cement Product"
+              class="project-logo"
+            />
+
+          </div>
+
+          <h4>Shri Sai Samarth Cement Product</h4>
+
+          <span class="project-view">
+            Visit Website &#8594;
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
   <!-- About -->
   <section id="about" class="about">
 
@@ -266,20 +311,6 @@
     </p>
 
 
-    <!-- Visitor Counter -->
-    <div class="visitor-counter">
-
-      <span class="visitor-icon">👁</span>
-
-      <span>Visitors:</span>
-
-      <strong id="visitorCount">
-        Loading...
-      </strong>
-
-    </div>
-
-
     <!-- LinkedIn -->
     <a
       href="https://www.linkedin.com/company/your-company-name"
@@ -296,39 +327,6 @@
     </a>
 
   </footer>
-
-
-  <!-- Visitor Counter Script -->
-  <script>
-
-    fetch("visit-counter.php")
-
-      .then(function(response) {
-
-        if (!response.ok) {
-          throw new Error("Unable to connect to visitor counter.");
-        }
-
-        return response.text();
-
-      })
-
-      .then(function(count) {
-
-        document.getElementById("visitorCount").textContent =
-          Number(count).toLocaleString();
-
-      })
-
-      .catch(function(error) {
-
-        console.error("Visitor counter error:", error);
-
-        document.getElementById("visitorCount").textContent = "0";
-
-      });
-
-  </script>
 
 </body>
 </html>
